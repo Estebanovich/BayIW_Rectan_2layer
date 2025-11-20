@@ -50,26 +50,27 @@
 
 # Time stepping parameters
  &PARM03
- startTime=0.,
- endTime=216000.,
-# pickupSuff='ckptA',
- nIter0=0,
+ startTime=216000.,
+ endTime=432000.,
+ pickupSuff='ckptA',
+ nIter0=7200,
  deltaT=30.,
  chkptFreq=86400.,
  dumpFreq=900.,
  monitorFreq=600.,
  monitorSelect=2,
- periodicExternalForcing=.TRUE.,
- externForcingPeriod=1200.,
- externForcingCycle=216000.,
+# periodicExternalForcing=.TRUE.,
+# externForcingPeriod=1200.,
+# externForcingCycle=216000.,
  &
+
 
 # Gridding parameters
  &PARM04
 # usingSphericalPolarGrid=.TRUE.,
  usingCartesianGrid=.TRUE.,
- xgOrigin=-843E3,
- ygOrigin=-62E3,
+ xgOrigin=-1400E3,
+ ygOrigin=-1621E3
  delR=1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.9, 
 	2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.5, 
 	3.8, 4.1, 4.4, 4.8, 5.2, 5.6, 6.0, 6.5, 
@@ -83,8 +84,8 @@
 
  &PARM05
  bathyFile='../input/nobahia_01_expand_bat.bin',
- meridWindFile='../input/merid_local_bay_560x352.bin', 
- hydrogThetaFile='../input/2layer_temp_50zlev_560x352.bin',
+# meridWindFile='../input/merid_local_bay_560x352.bin', 
+# hydrogThetaFile='../input/2layer_temp_50zlev_560x352.bin',
 # hydrogSaltFile='../input/feb_salt_90zlev_272x320.bin',
  &
 

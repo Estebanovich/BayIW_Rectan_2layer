@@ -4,6 +4,8 @@
 STDERR.*
 mitgcmuv
 run_expand/STDOUT.*
+run_expand_nobay/STDOUT.*
+run_expand_nobay/output.*
 
 # Specific directories #
 __pycache__/
