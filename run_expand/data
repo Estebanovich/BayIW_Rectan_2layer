@@ -25,10 +25,10 @@
  tRef=11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 
 	11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 
 	11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 
-	11.4, 11.4, 11.4, 11.4, 11.4, 7.1, 7.1, 7.1, 
-	7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 
-	7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 7.1, 
-	7.1,  
+	11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 
+	11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 
+	11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 11.4, 
+	11.4,  
 
 
  sRef= 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
@@ -50,18 +50,18 @@
 
 # Time stepping parameters
  &PARM03
- startTime=0.,
- endTime=216000.,
-# pickupSuff='ckptA',
- nIter0=0,
+ startTime=216000.,
+ endTime=432000.,
+ pickupSuff='ckptA',
+ nIter0=7200,
  deltaT=30.,
  chkptFreq=86400.,
  dumpFreq=900.,
  monitorFreq=600.,
  monitorSelect=2,
- periodicExternalForcing=.TRUE.,
- externForcingPeriod=1200.,
- externForcingCycle=216000.,
+# periodicExternalForcing=.TRUE.,
+# externForcingPeriod=1200.,
+# externForcingCycle=216000.,
  &
 
 # Gridding parameters
@@ -83,8 +83,8 @@
 
  &PARM05
  bathyFile='../input/bahia_01_expand_bat.bin',
- meridWindFile='../input/merid_local_bay_560x352.bin', 
- hydrogThetaFile='../input/2layer_temp_50zlev_560x352.bin',
+# meridWindFile='../input/merid_local_bay_560x352.bin', 
+# hydrogThetaFile='../input/2layer_temp_50zlev_560x352.bin',
 # hydrogSaltFile='../input/feb_salt_90zlev_272x320.bin',
  &
 
