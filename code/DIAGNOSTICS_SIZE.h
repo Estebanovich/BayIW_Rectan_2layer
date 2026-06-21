@@ -11,18 +11,24 @@ C     nStats     :: maximum number of statistics (e.g.: aver,min,max ...)
 C     diagSt_size:: maximum size of the storage array for statistics-diagnostics
 C Note : may need to increase "numDiags" when using several 2D/3D diagnostics,
 C  and "diagSt_size" (statistics-diags) since values here are deliberately small.
+      ! Máximo total de diagnósticos disponibles (puedes dejarlo alto)
+      !------------ DIAGNOSTICS_SIZE.h ------------
       INTEGER    ndiagMax
       INTEGER    numlists, numperlist, numLevels
       INTEGER    numDiags
       INTEGER    nRegions, sizRegMsk, nStats
       INTEGER    diagSt_size
-      PARAMETER( ndiagMax = 500 )
-      PARAMETER( numlists = 10, numperlist = 5, numLevels=2*Nr )
-      PARAMETER( numDiags = 20*Nr )
-      PARAMETER( nRegions = 0 , sizRegMsk = 1 , nStats = 4 )
-      PARAMETER( diagSt_size = 10*Nr )
-
+      PARAMETER( ndiagMax   = 500 )
+      PARAMETER( numlists   = 2 )
+      PARAMETER( numperlist = 5 )
+      PARAMETER( numLevels  = Nr )
+      PARAMETER( numDiags   = 5*Nr + 1 )
+      PARAMETER( nRegions   = 0 )
+      PARAMETER( sizRegMsk  = 1 )
+      PARAMETER( nStats     = 4 )
+      PARAMETER( diagSt_size= 10*Nr )
 
 CEH3 ;;; Local Variables: ***
 CEH3 ;;; mode:fortran ***
 CEH3 ;;; End: ***
+
